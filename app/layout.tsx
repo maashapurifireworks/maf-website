@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, Yatra_One } from "next/font/google";
 
-const inter = Montserrat({
+const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Navbar font={yatra} />
         {children}
       </body>
