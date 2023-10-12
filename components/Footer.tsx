@@ -5,20 +5,17 @@ export default function Footer({ font }: { font: NextFont }) {
   return (
     <div className="w-full  bg-gray-900 mt-24">
       <footer className="w-full md:max-w-[80vw] mx-auto p-5">
-        <div className="grid grid-cols-3 mt-10 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-16">
           <div className="">
             <Link href="/">
-              <h1
-                className={`md:text-4xl text-xl font-bold flex flex-col md:flex-row md:gap-2 text-white ${font.className}`}
-              >
-                <span>Ma Ashapuri</span>
-                <span>Fireworks</span>
+              <h1 className={`text-2xl font-bold text-white ${font.className}`}>
+                Ma Ashapuri Fatakda (Fireworks)
               </h1>
-              <p className="hidden md:block text-sm text-gray-100 ">
+              <p className="text-sm text-gray-100 ">
                 Wholesale Fireworks seller in Nadiad
               </p>
             </Link>
-            <p className="text-gray-300 mt-5 text-sm">
+            <p className="text-gray-300/60 mt-5 text-sm">
               At Ma Ashapuri Fatakda (Fireworks), your satisfaction is our
               priority. We take pride in serving you with the best fireworks in
               the Nadiad. We&apos;re dedicated to making your celebrations

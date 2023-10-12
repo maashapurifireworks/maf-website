@@ -1,15 +1,36 @@
-import { heroImage } from "@/public/images";
 import Image from "next/image";
 
-export default function ProductCard() {
+interface ProductType {
+  id: string;
+  name: string;
+  price: number;
+  disc_price: number;
+  photo_url: string;
+  created_at: string;
+}
+
+export default function ProductCard({ product }: { product: ProductType }) {
   return (
-    <div className=" rounded-sm shadow-md overflow-hidden">
+    <div className=" rounded-md shadow-md overflow-hidden">
       <div className="flex flex-col">
-        <Image src={heroImage} alt="Product Image" />
+        <div className="aspect-video overflow-hidden">
+          <Image
+            src={product.photo_url}
+            width="500"
+            height="300"
+            alt="Product Image"
+          />
+        </div>
         <div className="p-5">
-          <h1 className="font-semibold">Extra Time of Fujhadi </h1>
-          <p>Original Price Rs. 150</p>
-          <p>Discounted Price Rs. 100</p>
+          <h1 className="font-semibold">{product.name}</h1>
+          <p className="text-sm">
+            <span>Original Price Rs.</span>
+            <span className="font-medium">{product.price}</span>
+          </p>
+          <p className="text-sm">
+            <span>Discounted Price Rs.</span>
+            <span className="font-medium">{product.disc_price}</span>
+          </p>
         </div>
       </div>
     </div>

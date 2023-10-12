@@ -18,9 +18,9 @@ export default function HeroSection() {
           the perfect fireworks to make every event unforgettable.
         </p>
         <div className="">
-          <Link href="/contact">
+          <Link href="/products">
             <button className="mt-10 border bg-white hover:bg-transparent hover:border hover:text-white text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-150">
-              Contact Us
+              Explore our products
             </button>
           </Link>
         </div>

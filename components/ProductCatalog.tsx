@@ -1,7 +1,13 @@
 import Link from "next/link";
 import ProductCard from "./ProductCard";
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
 
-export default function ProductCatalog() {
+export default async function ProductCatalog() {
+  const cookieStore = cookies();
+  const supabase = createServerComponentClient({ cookies: () => cookieStore });
+
+  const { data: products } = await supabase.from("products").select().limit(12);
   return (
     <div className="mt-24 w-full flex flex-col items-center">
       <h1 className="font-semibold text-3xl md:text-4xl w-fit text-center border-b-4 border-red-600">
@@ -16,12 +22,9 @@ export default function ProductCatalog() {
             mt-10 gap-5 md:gap-10
       "
       >
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {products?.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
       <div className="w-full mt-16 flex">
         <Link
