@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, Yatra_One } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Navbar font={yatra} />
         {children}
+        <Footer font={yatra} />
       </body>
     </html>
   );

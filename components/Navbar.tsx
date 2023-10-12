@@ -7,7 +7,7 @@ export default function Navbar({ font }: { font: NextFont }) {
       <nav className="navbar flex justify-between p-5 w-full md:w-[80vw] md:mx-auto items-center">
         {/* Logo text and contact button */}
         <div className="">
-          <Link href="">
+          <Link href="/">
             <h1
               className={`md:text-3xl text-xl font-bold flex flex-col md:flex-row md:gap-2 text-red-600 ${font.className}`}
             >

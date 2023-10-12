@@ -1,3 +1,3 @@
 import heroImage from "./hero-img.jpg";
-
-export { heroImage };
+import diwaliWishImage from "./diwali-wish.jpg";
+export { heroImage, diwaliWishImage };

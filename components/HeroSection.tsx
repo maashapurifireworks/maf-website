@@ -11,11 +11,11 @@ export default function HeroSection() {
           Best Quality | Competitive Pricing | Safety First
         </h3>
         <p className="mt-10 max-w-xl text-sm md:text-base">
-          At Ma Ashapuri Fatakda (Fireworks), we are your reliable source for
-          wholesale fireworks. With a commitment to quality, safety, and
-          affordability, we provide a wide range of fireworks to meet all your
-          needs. From grand displays to intimate gatherings, we have the right
-          fireworks to make every event unforgettable.
+          At Ma Ashapuri Fatakda (Fireworks), we are your dependable wholesale
+          fireworks partner. Committed to quality, safety, and affordability, we
+          offer an extensive selection of 300+ fireworks products, catering to
+          all your needs. From grand spectacles to intimate gatherings, we have
+          the perfect fireworks to make every event unforgettable.
         </p>
         <div className="">
           <Link href="/contact">
