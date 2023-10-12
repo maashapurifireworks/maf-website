@@ -70,7 +70,7 @@ function TermsAndConditions() {
         Ma Ashapuri Fatakda (Fireworks) shall not be held liable for any direct
         or indirect damages resulting from the use of this website. We make no
         warranties or representations about the accuracy or completeness of the
-        website's content.
+        website&apos;s content.
       </p>
 
       <h3 className="text-xl font-semibold mb-2">
