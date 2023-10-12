@@ -14,7 +14,7 @@ const yatra = Yatra_One({
 });
 
 export const metadata: Metadata = {
-  title: "Ma Ashapuri Fireworks",
+  title: "Maa Ashapuri Fireworks",
   description: "Wholesale Fireworks seller in Nadiad",
 };
 

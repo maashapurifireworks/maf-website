@@ -21,8 +21,8 @@ export default function Footer({ font }: { font: NextFont }) {
             <p className="text-gray-300 mt-5 text-sm">
               At Ma Ashapuri Fatakda (Fireworks), your satisfaction is our
               priority. We take pride in serving you with the best fireworks in
-              the Nadiad. We're dedicated to making your celebrations memorable.
-              Join us in creating unforgettable moments!
+              the Nadiad. We&apos;re dedicated to making your celebrations
+              memorable. Join us in creating unforgettable moments!
             </p>
           </div>
           <div className="">

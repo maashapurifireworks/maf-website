@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProductCard from "./ProductCard";
 
 export default function ProductCatalog() {
@@ -21,6 +22,14 @@ export default function ProductCatalog() {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+      </div>
+      <div className="w-full mt-16 flex">
+        <Link
+          className="py-3 px-4 mx-auto bg-red-600 text-white shadow-sm border border-red-600 rounded-md hover:text-red-600 font-medium hover:bg-white transition-all duration-200"
+          href="/products"
+        >
+          See more Products
+        </Link>
       </div>
     </div>
   );
