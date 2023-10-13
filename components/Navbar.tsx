@@ -4,26 +4,33 @@ import Link from "next/link";
 export default function Navbar({ font }: { font: NextFont }) {
   return (
     <div className="w-full bg-white shadow-md">
-      <nav className="navbar flex justify-between p-5 w-full md:w-[80vw] md:mx-auto md:py-7  items-center">
+      <nav className="navbar flex justify-between p-5 w-full md:w-[80vw] md:mx-auto items-center">
         {/* Logo text and contact button */}
         <div className="">
-          <Link href="">
+          <Link href="/">
             <h1
-              className={`md:text-2xl text-xl font-bold text-red-600 ${font}`}
+              className={`md:text-3xl text-xl font-bold flex flex-col md:flex-row md:gap-2 text-red-600 ${font.className}`}
             >
-              Ma Ashapuri Fireworks
+              <span>Ma Ashapuri</span>
+              <span>Fireworks</span>
             </h1>
-            <span className="text-xs md:text-sm font-semibold text-gray-800">
-              Wholesale Fireworks Seller in Nadiad
-            </span>
+            <p className="hidden md:block text-sm text-gray-800 ">
+              Wholesale Fireworks seller in Nadiad
+            </p>
           </Link>
         </div>
-        <div className="flex items-center">
+        <div className="flex flex-col md:flex-row items-center text-gray-800 md:gap-5">
           <Link
             href="tel:+918780775601"
-            className="py-3 px-2 bg-green-500 rounded-md font-semibold text-white"
+            className="font-semibold md:py-2 md:px-3 md:border-b-4 md:border-red-600 hover:bg-red-600 hover:text-white transition-all duration-150"
           >
-            Call Now
+            +91 87807-75601
+          </Link>
+          <Link
+            href="tel:+919316436614"
+            className="font-semibold md:py-2 md:px-3 md:border-b-4 md:border-red-600 hover:bg-red-600 hover:text-white transition-all duration-150"
+          >
+            +91 93164-36614
           </Link>
         </div>
       </nav>

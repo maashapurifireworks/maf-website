@@ -1,11 +1,13 @@
+import DiwaliWish from "@/components/DiwaliWishSection";
+import HeroSection from "@/components/HeroSection";
+import ProductCatalog from "@/components/ProductCatalog";
+
 export default function Home() {
   return (
-    <main className="h-[70vh]">
-      <div className="w-full flex items-center h-full justify-center">
-        <h1 className="text-4xl md:text-9xl font-bold text-red-500">
-          Coming Soon...
-        </h1>
-      </div>
+    <main className="w-full md:max-w-[80vw] md:mx-auto p-5 px-3">
+      <HeroSection />
+      <ProductCatalog />
+      <DiwaliWish />
     </main>
   );
 }
