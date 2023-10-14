@@ -13,11 +13,12 @@ export default function ProductCard({ product }: { product: ProductType }) {
   return (
     <div className=" rounded-md shadow-md overflow-hidden">
       <div className="flex flex-col">
-        <div className="aspect-video overflow-hidden">
+        <div className="aspect-square overflow-hidden">
           <Image
             src={product.photo_url}
-            width="500"
+            width="300"
             height="300"
+            className="mx-auto"
             alt="Product Image"
           />
         </div>

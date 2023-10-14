@@ -15,9 +15,9 @@ interface ProductType {
 export default function ProductsPage() {
   const supabase = createClientComponentClient();
   const [products, setProducts] = useState<any>(null);
-  const [productOffset, setProductOffset] = useState<number>(1);
+  const [productOffset, setProductOffset] = useState<number>(30);
   const [endOfProducts, setEndOfProducts] = useState<boolean>(false);
-  const offsetProductBy = 1;
+  const offsetProductBy = 30;
 
   useEffect(() => {
     const getData = async () => {

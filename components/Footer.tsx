@@ -1,4 +1,6 @@
+import { logo } from "@/public/images";
 import { NextFont } from "next/dist/compiled/@next/font";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer({ font }: { font: NextFont }) {

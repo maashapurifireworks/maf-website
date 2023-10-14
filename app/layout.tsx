@@ -16,6 +16,35 @@ const yatra = Yatra_One({
 export const metadata: Metadata = {
   title: "Maa Ashapuri Fireworks",
   description: "Wholesale Fireworks seller in Nadiad",
+  openGraph: {
+    type: "website",
+    url: "https://maashapurifireworks.com",
+    title: "Maa Ashapuri Fatakda (Fireworks)",
+    description:
+      "50% Off on all Fireworks | Wholesale Fireworks seller in Nadiad | Ma Ashapuri Fatakda (Fireworks)",
+    images: [
+      {
+        url: "https://maashapurifireworks.in/bg-og.jpg",
+        width: 1600,
+        height: 840,
+        alt: "Maa Ashapuri Fatakda (Fireworks)",
+      },
+    ],
+  },
+  twitter: {
+    site: "@maashapurifireworks",
+    title: "Maa Ashapuri Fatakda (Fireworks)",
+    description:
+      "50% Off on all Fireworks | Wholesale Fireworks seller in Nadiad | Ma Ashapuri Fatakda (Fireworks)",
+    images: [
+      {
+        url: "https://maashapurifireworks.in/bg-og.jpg",
+        width: 1600,
+        height: 840,
+        alt: "Maa Ashapuri Fatakda (Fireworks)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -32,16 +61,17 @@ export default function RootLayout({
       </body>
       <Script
         async
+        strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-G1JTM2SG74"
       ></Script>
-      <Script id="g-analytics">
+      <Script id="g-analytics" strategy="afterInteractive">
         {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-G1JTM2SG74');`}
       </Script>
-      <Script id="m-clarity">
+      <Script id="m-clarity" strategy="afterInteractive">
         {`(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
