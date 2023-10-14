@@ -11,11 +11,11 @@ export default function HeroSection() {
           Best Quality | Competitive Pricing | Safety First
         </h3>
         <p className="mt-10 max-w-xl text-sm md:text-base">
-          At Ma Ashapuri Fatakda (Fireworks), we're your trusted wholesale
-          fireworks supplier in Nadiad and neighboring areas. We're all about
-          quality, safety, and affordability, offering over 300 exceptional
-          fireworks products. From Ahmedabad to Surat, we have the perfect
-          fireworks to light up your events and make them unforgettable.
+          At Ma Ashapuri Fatakda (Fireworks), we&apos;re your trusted wholesale
+          fireworks supplier in Nadiad and neighboring areas. We&apos;re all
+          about quality, safety, and affordability, offering over 300
+          exceptional fireworks products. From Ahmedabad to Surat, we have the
+          perfect fireworks to light up your events and make them unforgettable.
         </p>
         <div className="">
           <Link href="/products">
