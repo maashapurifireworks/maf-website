@@ -26,8 +26,11 @@ export default function Navbar({ font }: { font: NextFont }) {
                   <span>Fireworks</span>
                 </h1>
                 <p className="hidden md:block text-sm text-gray-800 ">
-                  Wholesale Fireworks seller in Nadiad
+                  Near Santram Furniture, Piplag - Petlad Road, Nadiad
                 </p>
+                {/* <p className="hidden md:block text-sm text-gray-800 ">
+                  Wholesale Fireworks seller in Nadiad
+                </p> */}
               </div>
             </div>
           </Link>
