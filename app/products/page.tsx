@@ -252,7 +252,8 @@ export default function ProductsPage() {
     const fetchCategories = async () => {
       const { data: categoriesData } = await supabase
         .from("extra_data_dup")
-        .select();
+        .select()
+        .order("order", { ascending: true });
 
       setCategories(categoriesData);
     };
