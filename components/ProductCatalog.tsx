@@ -7,7 +7,10 @@ export default async function ProductCatalog() {
   const cookieStore = cookies();
   const supabase = createServerComponentClient({ cookies: () => cookieStore });
 
-  const { data: products } = await supabase.from("products").select().limit(20);
+  const { data: products } = await supabase
+    .from("new_products_prod")
+    .select()
+    .limit(20);
   return (
     <div className="mt-24 w-full flex flex-col items-center">
       <h1 className="font-semibold text-3xl md:text-4xl w-fit text-center border-b-4 border-red-600">
@@ -15,10 +18,10 @@ export default async function ProductCatalog() {
       </h1>
       <div
         className="grid
-            grid-cols-1
-            md:grid-cols-2
-            lg:grid-cols-3
-            xl:grid-cols-4
+            grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
+            xl:grid-cols-5
             mt-10 gap-5 md:gap-10
       "
       >
