@@ -61,10 +61,11 @@ export default function ProductCard({ product }: { product: ProductType }) {
           <h1 className="font-semibold text-lg">{product.name}</h1>
           <div className="mt-2">
             <p className="text-sm line-through text-gray-500">
-              Rs. {product.price}
+              Rs. {product.disc_price}
             </p>
             <p className="text-xl font-bold text-red-500">
-              Rs. {product.disc_price}
+              Rs.
+              {product.disc_price / 2}
             </p>
           </div>
         </div>
