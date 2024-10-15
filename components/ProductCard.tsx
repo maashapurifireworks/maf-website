@@ -38,6 +38,7 @@
 import Image from "next/image";
 
 interface ProductType {
+  id: number;
   name: string;
   price: number;
   disc_price: number;
@@ -58,7 +59,9 @@ export default function ProductCard({ product }: { product: ProductType }) {
           />
         </div>
         <div className="p-4">
-          <h1 className="font-semibold text-lg">{product.name}</h1>
+          <h1 className="font-semibold text-lg">
+            {product.id} - {product.name}
+          </h1>
           <div className="mt-2">
             <p className="text-sm line-through text-gray-500">
               Rs. {product.disc_price}
